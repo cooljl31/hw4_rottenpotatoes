@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0'
+gem 'rails', '4.2.0'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -9,12 +9,12 @@ gem 'rails', '3.1.0'
 group :development, :test do
   gem 'sqlite3'
   gem 'ruby-debug19', :require => 'ruby-debug'
-  gem 'cucumber-rails'
-  gem 'cucumber-rails-training-wheels'
+  gem 'cucumber-rails', '>= 1.3.0'
+  gem 'cucumber-rails-training-wheels', '>= 1.0.0'
   gem 'database_cleaner'
-  gem 'capybara'
+  gem 'capybara', '>= 1.1.2'
   gem 'launchy'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 2.8.1'
   gem 'simplecov'
 end
 group :production do
@@ -25,12 +25,12 @@ end
 # in production environments by default.
 group :assets do
   gem 'therubyracer'              
-  gem 'sass-rails', "  ~> 3.1.0"
-  gem 'coffee-rails', "~> 3.1.0"
+  gem 'sass-rails', '~> 4.0.0'
+  gem 'coffee-rails', '~> 4.0.0'
   gem 'uglifier'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 2.0.1'
 
 # Use unicorn as the web server
 # gem 'unicorn'
