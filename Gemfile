@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0'
+gem 'rails', '5.2.4.6'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -14,7 +14,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'capybara'
   gem 'launchy'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 2.8.1'
   gem 'simplecov'
 end
 group :production do
@@ -25,12 +25,12 @@ end
 # in production environments by default.
 group :assets do
   gem 'therubyracer'              
-  gem 'sass-rails', "  ~> 3.1.0"
-  gem 'coffee-rails', "~> 3.1.0"
+  gem 'sass-rails', '~> 5.0.5'
+  gem 'coffee-rails', '~> 4.2.2'
   gem 'uglifier'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 
 # Use unicorn as the web server
 # gem 'unicorn'
